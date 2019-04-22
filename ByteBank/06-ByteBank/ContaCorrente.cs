@@ -2,13 +2,11 @@
 {
     public class ContaCorrente
     {
-        public int agencia;
-        public int numero;
-        private double _saldo = 100;
-
-
+        public int Agencia { get; set; }
+        public int Numero { get; set; }
         public Cliente Titular { get; set; }
 
+        private double _saldo = 100;
         public double Saldo {
             get {
                 return _saldo;
@@ -23,7 +21,6 @@
                 _saldo = value;
             }
         }
-
 
         public bool Sacar(double valor)
         {
