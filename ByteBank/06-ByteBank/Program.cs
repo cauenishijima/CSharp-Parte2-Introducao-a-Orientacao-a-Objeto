@@ -15,11 +15,12 @@ namespace _06_ByteBank
             cliente.CPF = "229.984.398-10";
             cliente.Profissao = "Desenvolvedor C#";
 
-            ContaCorrente conta = new ContaCorrente();
+            ContaCorrente conta = new ContaCorrente(867,867321);
             conta.Saldo = -10;
             conta.Titular = cliente;
 
             Console.WriteLine("Titular: {0}", conta.Titular.Nome);
+            Console.WriteLine("Agencia {0}, Conta {1}", conta.Agencia, conta.Numero);
             Console.WriteLine("O saldo da conta é {0}", conta.Saldo);
 
 
