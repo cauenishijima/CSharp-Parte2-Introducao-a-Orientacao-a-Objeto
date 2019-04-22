@@ -13,11 +13,15 @@ namespace _04_ByteBank
             ContaCorrente contaDoBruno = new ContaCorrente();
 
             contaDoBruno.titular = "Bruno";
-
             Console.WriteLine(contaDoBruno.saldo);
+
             bool resultaSaque = contaDoBruno.Sacar(500);
             Console.WriteLine(contaDoBruno.saldo);
             Console.WriteLine(resultaSaque);
+
+            contaDoBruno.Depositar(500);
+            Console.WriteLine(contaDoBruno.saldo);
+
             Console.ReadLine();
         }
     }
