@@ -22,6 +22,11 @@ namespace _06_ByteBank
             Console.WriteLine("Titular: {0}", conta.Titular.Nome);
             Console.WriteLine("Agencia {0}, Conta {1}", conta.Agencia, conta.Numero);
             Console.WriteLine("O saldo da conta é {0}", conta.Saldo);
+            Console.WriteLine("Total de Contas: {0}!", ContaCorrente.TotalDeContasCriadas);
+
+            ContaCorrente conta2 = new ContaCorrente(867, 867123);
+            Console.WriteLine("Total de Contas: {0}!", ContaCorrente.TotalDeContasCriadas);
+
 
 
             Console.ReadLine();

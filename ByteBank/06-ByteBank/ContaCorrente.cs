@@ -2,6 +2,8 @@
 {
     public class ContaCorrente
     {
+        public static int TotalDeContasCriadas { get; private set; }
+
         private int _agencia;
         public int Agencia {
             get {
@@ -39,6 +41,8 @@
         {
             this.Agencia = agencia;
             this.Numero = numero;
+
+            TotalDeContasCriadas++;
         }
 
         public bool Sacar(double valor)
